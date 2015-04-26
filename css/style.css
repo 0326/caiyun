@@ -86,14 +86,17 @@ video {
 	width: 100%; 
 	height: 450px; 
 	margin: 0 auto; overflow: hidden; zoom: 1;
-	background: url(http://7xis4f.com1.z0.glb.clouddn.com/map.jpg) top left no-repeat;
-	background-size: contain;
+/*	background: url(http://7xis4f.com1.z0.glb.clouddn.com/map.jpg) top left no-repeat;
+	background-size: contain;*/
 }
-/*.section6 .inner  { position: relative; width: 880px; margin: 0 auto 20px; font: 500 30px "Microsoft Yahei"; color: #856B37;}*/
-.contact-con li{
-	list-style: none;
-	/*display: inline-block;*/
+
+#baiduMap{
+	height: 450px;
+	width:100%;
 }
+
+
+
 .footer { 
 	/*margin-top: 100px; */
 	line-height: 30px; color: #666; font-size: 12px; 
