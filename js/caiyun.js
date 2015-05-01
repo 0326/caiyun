@@ -85,7 +85,7 @@ $(document).ready(function() {
 	});
 	//百度地图
 	function initMap (argument) {
-    var sContent = '<div style="margin:0;line-height:20px;padding:12px 6px;width:300px;">' +
+    var sContent = '<div style="margin:0;line-height:20px;padding:12px 6px;width:300px;height:90px;">' +
                     '<img id="mapImg" src="img/home/0.jpg" alt="" style="float:right;zoom:1;overflow:hidden;width:100px;height:100px;margin-left:3px;"/>' +
                     '<p>联系人：陈小姐</p><p>电话：(010)59928888</p><p>地址：河北省承德市丰宁满族自治县大滩镇元山子村</p>' +
                   '</div>';
@@ -101,9 +101,9 @@ $(document).ready(function() {
   	map.addControl(new BMap.OverviewMapControl());  
 	  marker.openInfoWindow(infoWindow);
 	  //图片加载完毕重绘infowindow
-	  document.getElementById('mapImg').onload = function (){
-		  infoWindow.redraw();   //防止在网速较慢，图片未加载时，生成的信息框高度比图片的总高度小，导致图片部分被隐藏
-	  }
+	  // document.getElementById('mapImg').onload = function (){
+		 //  infoWindow.redraw();   //防止在网速较慢，图片未加载时，生成的信息框高度比图片的总高度小，导致图片部分被隐藏
+	  // }
 	}
 });
 
