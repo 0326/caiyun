@@ -1,0 +1,337 @@
+html {
+   -ms-touch-action: none;  /* 阻止windows Phone 的默认触摸事件 */
+}
+body,
+div,
+p {
+	margin: 0;
+	padding: 0;
+}
+ul {
+   list-style: none;
+}
+body {
+	width: 100%;
+   *cursor: default;
+	overflow: hidden;
+	font: 16px/1.5 "Microsoft YaHei",Helvetica,"STHeiti STXihei","Microsoft JhengHei",Arial;
+	min-width: 1000px;
+}
+#pageContain {
+	overflow: hidden;
+}
+.page {
+	display: none;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.contain {
+	width: 100%;
+	min-width: 1000px;
+	height: 100%;
+	display: none;
+	position: relative;
+	z-index: 0;
+	padding-left: 2em;
+	
+	text-align: left; 
+	color: #fff;
+	z-index: 10;
+	/*background-size: cover;	*/
+}
+.contain .title{
+	margin-bottom: 1.6em;
+	text-align: center;
+}
+.contain p {margin: .2em 0;}
+
+.current .contain,.slide .contain {
+	display: block;
+}
+.current {
+	display: block;
+	z-index: 1;
+}
+.slide {
+	display: block;
+	z-index: 2;
+}
+.swipe {
+   display: block;
+   z-index: 3;
+   transition-duration: 0ms !important;
+   -webkit-transition-duration: 0ms !important;
+}
+
+/*侧边菜单*/
+#menu { position: fixed; right: 20px; top: 50%; width: 90px; margin: -160px 0 0; padding: 0; list-style-type: none; z-index: 70;}
+#menu li { margin-top: 10px; font: 14px "Microsoft Yahei";}
+#menu a { 
+	display: block; 
+	padding: 10px 0; 
+	background-color: 
+	rgba(255,255,255,0.7);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#b2ffffff,endColorstr=#b2ffffff); 
+	color: #0074EA; 
+	text-align: center; 
+	text-decoration: none;
+}
+#menu a:hover{
+	color: #fff; 
+	background-color: rgba(0, 0, 0,0.5);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7000000,endColorstr=#7000000);  
+	outline: none;
+}
+#menu .active a { 
+	color: #fff; 
+	background-color: rgba(0, 116, 234,0.5); 
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#700074EA,endColorstr=#700074EA); 
+	outline: none;
+}
+
+.intro-box{
+	margin-left: 550px;
+	min-width: 400px;
+	max-width: 450px;
+	font-size: 1.2rem;
+}
+.intro-box p {
+	margin-bottom: 1.2em;
+
+}
+/*//flexSlider 幻灯片*/
+.flex-direction-nav a.flex-next:before,.flex-direction-nav a.flex-prev:before{
+	color:#6c45d8;
+}
+
+.flexslider{
+	border: none;
+}
+
+.flexslider .slides > li{
+	position: relative;
+}
+/*.page1,.page3,.page5{
+	background-color: #37c1e3;
+}*/
+.page1 .contain,.page3 .contain,.page5 .contain{
+	/*background: url(../img/bg.png) 0 0 repeat;*/
+	/*background: url(http://mat1.gtimg.com/henan/images/henan_zt/2014zt/2014qeahn/cloud.png)  0 0 repeat-x;*/
+/*  animation: 18s linear 0s normal none infinite cloud;
+  -webkit-animation: 18s linear 0s normal none infinite cloud;*/
+}
+.page{
+	background-color: #7851DA;
+}
+.page .contain{
+	background: url(../img/bg.png) 0 0 repeat;
+}
+
+/*首页*/
+.page1 .contain{padding: 0;}
+.page1 .homeSlider{width: 100%;height: 100%;margin: 0;padding: 0;border: 0;overflow: hidden;}
+.page1 .homeSlider::after{
+	position: absolute;
+	top: 0;left: 0;
+	content: " ";
+	width: 100%;height: 100%;
+}
+.page1 .homeSlider{background-size: cover;}
+.page1 .homeSlider li{
+	background-size: cover;
+	display: block;
+	list-style: none;
+	width: 100%;height: 100%;
+}
+.page1 .screen-main{
+	position: absolute;
+	width: 100%;height: 100%;
+	left: 0;top: 0;
+	padding-top: 25%;
+	padding-left: 10%;
+
+	background-color: rgba(0,0,0,0.5);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#70000000,endColorstr=#70000000);
+}
+.page1 .screen-main h1 {font-size: 3em;margin:.5em 0; font-weight: 100;}
+.page1 .screen-main h2 {font-size: 2.3em;margin:.5em 0;}
+.page1 .screen-main p  { margin-top: -0.5em;}
+.page1 .screen-main span  {margin-right:  2em;}
+.page1 .screen-main .logo{height: 2.1em;margin: 0 .5em .5em 0; vertical-align: middle;}
+
+/*关于我们*/
+.page2 .intro-box{
+	margin-left:600px;
+}
+
+.page2 .sliderbox{
+	float: left;
+	padding: 10px;
+	margin-left: 40px;
+	background-color: #6c45d8;
+}
+.page2 .flexslider{
+	width: 500px;
+	height: 400px;
+
+}
+.page2 .flexslider .slides img{
+	width: 500px;
+}
+/*.flex-control-nav{
+	bottom: 10px;
+}*/
+.page2 .flexslider .flex-caption{
+	position: absolute;
+  width: 96%;
+  padding: 2%;
+  margin: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7000000,endColorstr=#7000000);
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+
+
+/*山庄设施*/
+.page3 {
+	color: #0074EA;
+	/*background: #f0f;*/
+	/*background-image: url(../img/about/bg0.jpg);*/
+}
+.header{
+	text-align: center;
+}
+.page3 .sliderbox{
+	margin: 20px auto auto auto;
+	width: 840px;
+	padding: 40px;
+	background: #6c45d8;
+}
+.page3 .flexslider{
+	width: 840px;
+	height: 300px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.page3 .flexslider .flex-caption {
+	position: absolute;
+  width: 96%;
+  padding: 2%;
+  margin: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.5);
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+
+
+/*推荐景点*/
+.page4 {
+	color: #0074EA;
+	/*background: #f0f;*/
+	/*background-image: url(../img/about/bg0.jpg);*/
+}
+.scenic-box{
+	width: 980px;
+	padding-top: 80px;
+	margin: 20px auto auto auto;
+	background-color: #6c45d8;
+}
+.scenic-box .flexslider{
+	width: 300px;
+	height: 200px;
+}
+.scenic-box .item{
+	*display: inline;
+	display: inline-block;
+	width: 300px;
+	margin: 10px;
+	position: relative;
+}
+.scenic-box .item img{
+	width: 100%;
+}
+.scenic-box .item .title{
+	position: absolute;
+	z-index: 1000;
+	text-align: center;
+	width: 100%;
+	top:-80px;
+}
+/*彩云风光*/
+.page5 .title{
+	margin-bottom: 0;
+}
+.page5 .img-box{
+	margin: 10px 10px 10px 10px;
+}
+.img-gallary{
+	width: 1000px;
+	margin:0 auto;
+	/*height: 600px;*/
+}
+.img-gallary li{
+	width: 300px;
+	/*height: 0px;*/
+	margin: 0;
+	overflow: hidden;
+	display: inline-block;
+	position: relative;
+}
+.img-gallary img{
+	height: 100%;
+	cursor: pointer;
+}
+
+
+.page6 .contain { 
+	background: #fff;
+	text-align: left; 
+	color: #666;
+	height: 100%;
+/*	background: url(../img/contact/map.jpg) top center no-repeat;
+	background-size: contain;*/
+}
+/*.contact-con { 
+	width: 100%; 
+	height: 450px; 
+	margin: 0 auto; overflow: hidden; zoom: 1;
+	background: url(http://7xis4f.com1.z0.glb.clouddn.com/map.jpg) top left no-repeat;
+	background-size: contain;
+}*/
+
+#baiduMap{
+	height: 400px;
+	width:600px;
+	float: left;
+}
+.page6 .intro-box{
+	margin-left: 620px;
+	margin-right: 120px;
+	font-size: 1em;
+}
+
+
+.page6 .footer { 
+	/*margin-top: 100px; */
+	line-height: 30px; color: #fff; font-size: 12px; 
+	text-align: center;background-color: #7851DA;
+	position: absolute;
+	bottom: 0;
+	z-index: 1000;
+	width: 100%;
+}
+.foot a { color: #0074EA;}

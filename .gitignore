@@ -1,0 +1,6 @@
+# directories
+.git
+_site/
+
+# file types
+*.psd
