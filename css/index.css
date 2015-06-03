@@ -28,7 +28,14 @@ body {
 	position: absolute;
 	top: 0;
 	left: 0;
+	background-color: #7851DA;
 }
+/*.page1 .contain,.page3 .contain,.page5 .contain{*/
+	/*background: url(../img/bg.png) 0 0 repeat;*/
+	/*background: url(http://mat1.gtimg.com/henan/images/henan_zt/2014zt/2014qeahn/cloud.png)  0 0 repeat-x;*/
+/*  animation: 18s linear 0s normal none infinite cloud;
+  -webkit-animation: 18s linear 0s normal none infinite cloud;*/
+/*}*/
 .contain {
 	width: 100%;
 	min-width: 1000px;
@@ -41,7 +48,7 @@ body {
 	text-align: left; 
 	color: #fff;
 	z-index: 10;
-	/*background-size: cover;	*/
+	background: url(../img/bg.png) 0 0 repeat;
 }
 .contain .title{
 	margin-bottom: 1.6em;
@@ -118,18 +125,6 @@ body {
 /*.page1,.page3,.page5{
 	background-color: #37c1e3;
 }*/
-.page1 .contain,.page3 .contain,.page5 .contain{
-	/*background: url(../img/bg.png) 0 0 repeat;*/
-	/*background: url(http://mat1.gtimg.com/henan/images/henan_zt/2014zt/2014qeahn/cloud.png)  0 0 repeat-x;*/
-/*  animation: 18s linear 0s normal none infinite cloud;
-  -webkit-animation: 18s linear 0s normal none infinite cloud;*/
-}
-.page{
-	background-color: #7851DA;
-}
-.page .contain{
-	background: url(../img/bg.png) 0 0 repeat;
-}
 
 /*首页*/
 .page1 .contain{padding: 0;}
@@ -186,14 +181,14 @@ body {
 	bottom: 10px;
 }*/
 .page2 .flexslider .flex-caption{
-	position: absolute;
+  position: absolute;
   width: 96%;
   padding: 2%;
   margin: 0;
   left: 0;
   bottom: 0;
   background: rgba(0,0,0,0.5);
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7000000,endColorstr=#7000000);
+  /*filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7000000,endColorstr=#7000000);*/
   color: #fff;
   font-size: 14px;
   line-height: 18px;
@@ -231,6 +226,7 @@ body {
   left: 0;
   bottom: 0;
   background: rgba(0,0,0,.5);
+  /*filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7000000,endColorstr=#7000000);*/
   color: #fff;
   font-size: 14px;
   line-height: 18px;
