@@ -17,6 +17,12 @@ body {
 	font: 16px/1.5 "Microsoft YaHei",Helvetica,"STHeiti STXihei","Microsoft JhengHei",Arial;
 	min-width: 1000px;
 }
+.ih-item .info p{
+	font-style: normal !important;
+}
+.ih-item .info p{
+	font-size: 14px !important;
+}
 #pageContain {
 	overflow: hidden;
 }
@@ -28,14 +34,11 @@ body {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background-color: #7851DA;
+	/*background-color: #7851DA;*/
 }
-/*.page1 .contain,.page3 .contain,.page5 .contain{*/
-	/*background: url(../img/bg.png) 0 0 repeat;*/
-	/*background: url(http://mat1.gtimg.com/henan/images/henan_zt/2014zt/2014qeahn/cloud.png)  0 0 repeat-x;*/
-/*  animation: 18s linear 0s normal none infinite cloud;
-  -webkit-animation: 18s linear 0s normal none infinite cloud;*/
-/*}*/
+.page .header{
+	padding-left: 100px;
+}
 .contain {
 	width: 100%;
 	min-width: 1000px;
@@ -48,11 +51,7 @@ body {
 	text-align: left; 
 	color: #fff;
 	z-index: 10;
-	background: url(../img/bg.png) 0 0 repeat;
-}
-.contain .title{
-	margin-bottom: 1.6em;
-	text-align: center;
+	/*background: url(../img/bg.png) 0 0 repeat;*/
 }
 .contain p {margin: .2em 0;}
 
@@ -137,9 +136,12 @@ body {
 }
 .page1 .homeSlider{background-size: cover;}
 .page1 .homeSlider li{
-	background-size: cover;
-	display: block;
+	position: absolute;
+	left: 0;top: 0;
 	list-style: none;
+	width: 100%;height: 100%;
+}
+.page1 .homeSlider img{
 	width: 100%;height: 100%;
 }
 .page1 .screen-main{
@@ -149,8 +151,8 @@ body {
 	padding-top: 25%;
 	padding-left: 10%;
 
-	background-color: rgba(0,0,0,0.5);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#70000000,endColorstr=#70000000);
+	/*background-color: rgba(0,0,0,0.5);*/
+	/*filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#70000000,endColorstr=#70000000);*/
 }
 .page1 .screen-main h1 {font-size: 3em;margin:.5em 0; font-weight: 100;}
 .page1 .screen-main h2 {font-size: 2.3em;margin:.5em 0;}
@@ -159,120 +161,107 @@ body {
 .page1 .screen-main .logo{height: 2.1em;margin: 0 .5em .5em 0; vertical-align: middle;}
 
 /*关于我们*/
-.page2 .intro-box{
-	margin-left:600px;
+.page2{
+	background-image: url(../img/about/bg0.jpg);
 }
-
-.page2 .sliderbox{
-	float: left;
-	padding: 10px;
-	margin-left: 40px;
-	background-color: #6c45d8;
+.page2 .header{
+	padding-right: 150px;
 }
-.page2 .flexslider{
-	width: 500px;
-	height: 400px;
-
+.page2 .intro {
+	padding: 50px 150px 0 100px; 
+	/*width: 900px;*/
+	/*max-width: 1000px;*/
 }
-.page2 .flexslider .slides img{
-	width: 500px;
+.page2 .intro li{
+	display: inline-block; 
+	width: 25%;
+	height: auto;
+	border-color: rgba(255,255,255,0.2);
 }
-/*.flex-control-nav{
-	bottom: 10px;
-}*/
-.page2 .flexslider .flex-caption{
-  position: absolute;
-  width: 96%;
-  padding: 2%;
-  margin: 0;
-  left: 0;
-  bottom: 0;
-  background: rgba(0,0,0,0.5);
-  /*filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7000000,endColorstr=#7000000);*/
-  color: #fff;
-  font-size: 14px;
-  line-height: 18px;
-}
-
 
 
 /*山庄设施*/
-.page3 {
-	color: #0074EA;
-	/*background: #f0f;*/
-	/*background-image: url(../img/about/bg0.jpg);*/
-}
-.header{
-	text-align: center;
-}
-.page3 .sliderbox{
-	margin: 20px auto auto auto;
-	width: 840px;
-	padding: 40px;
-	background: #6c45d8;
-}
-.page3 .flexslider{
-	width: 840px;
-	height: 300px;
-	margin: 0 auto;
-	text-align: center;
-}
+.page3{
+	background: url(../img/facility/bg.jpg) left top;
+	background-size: 100%;
 
-.page3 .flexslider .flex-caption {
+}
+.page3 .img-list{
+	list-style: none;
+	padding-left: 100px;
+	padding-right: 150px;
+}
+.page3 .img-list li{
+	position: relative;
+	width: 25%;
+	height: 200px;
+	overflow: hidden;
+	float: left;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+.page3  .caption {
 	position: absolute;
+	text-align: center;
   width: 96%;
   padding: 2%;
   margin: 0;
   left: 0;
   bottom: 0;
   background: rgba(0,0,0,.5);
-  /*filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7000000,endColorstr=#7000000);*/
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7000000,endColorstr=#7000000);
   color: #fff;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
+  font-weight: lighter;
 }
-
 
 
 /*推荐景点*/
-.page4 {
-	color: #0074EA;
+.page4{
+	/*color: #0074EA;*/
 	/*background: #f0f;*/
-	/*background-image: url(../img/about/bg0.jpg);*/
+	background: url(../img/scenic/bg.jpg);
+	background-size: cover;
 }
 .scenic-box{
-	width: 980px;
-	padding-top: 80px;
-	margin: 20px auto auto auto;
-	background-color: #6c45d8;
+	min-width: 960px;
+	padding-left: 100px;
+	padding-right: 150px;
 }
-.scenic-box .flexslider{
-	width: 300px;
-	height: 200px;
-}
-.scenic-box .item{
+.scenic-box li{
 	*display: inline;
 	display: inline-block;
-	width: 300px;
+	width: 31%;
+	/*width: 300px;*/
 	margin: 10px;
 	position: relative;
 }
-.scenic-box .item img{
+.scenic-box img{
 	width: 100%;
+	float: left;
 }
-.scenic-box .item .title{
+.scenic-box .title{
 	position: absolute;
 	z-index: 1000;
 	text-align: center;
 	width: 100%;
 	top:-80px;
 }
+.scenic-box .ih-item.square{
+	border:none;
+}
+
+
 /*彩云风光*/
-.page5 .title{
-	margin-bottom: 0;
+.page5{
+	/*color: #0074EA;*/
+	/*background: #f0f;*/
+	/*background-image: url(../img/about/bg0.jpg) no-repeat 100%;*/
+	/*background-size: cover;*/
+	background: url(../img/caiyun/bg.jpg) no-repeat;
+	background-size: 100% 100%;
 }
 .page5 .img-box{
-	margin: 10px 10px 10px 10px;
+	margin: 50px 10px 10px 10px;
 }
 .img-gallary{
 	width: 1000px;
@@ -281,17 +270,21 @@ body {
 }
 .img-gallary li{
 	width: 300px;
-	/*height: 0px;*/
+	height: 169px;
 	margin: 0;
 	overflow: hidden;
-	display: inline-block;
+	/*display: inline-block;*/
+	float: left;
 	position: relative;
 }
 .img-gallary img{
 	height: 100%;
 	cursor: pointer;
 }
-
+.img-gallary img:hover{
+	opacity: 0.8;
+}
+/*/////////////////*/
 
 .page6 .contain { 
 	background: #fff;
@@ -312,10 +305,11 @@ body {
 #baiduMap{
 	height: 400px;
 	width:600px;
+	margin-left: 100px;
 	float: left;
 }
 .page6 .intro-box{
-	margin-left: 620px;
+	margin-left: 720px;
 	margin-right: 120px;
 	font-size: 1em;
 }
@@ -323,8 +317,8 @@ body {
 
 .page6 .footer { 
 	/*margin-top: 100px; */
-	line-height: 30px; color: #fff; font-size: 12px; 
-	text-align: center;background-color: #7851DA;
+	line-height: 30px; color: #666; font-size: 12px; 
+	text-align: center;background-color: #282828;
 	position: absolute;
 	bottom: 0;
 	z-index: 1000;
