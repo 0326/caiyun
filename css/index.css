@@ -17,12 +17,16 @@ body {
 	font: 16px/1.5 "Microsoft YaHei",Helvetica,"STHeiti STXihei","Microsoft JhengHei",Arial;
 	min-width: 1000px;
 }
-.ih-item .info p{
-	font-style: normal !important;
+.colored.effect6.square.ih-item .info{
+	background: #1a4a72;
+	background: rgba(26,74,114,0.6);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#1a4a72ff,endColorstr=#1a4a72ff); 
 }
-.ih-item .info p{
-	font-size: 14px !important;
+.colored.effect6.square.ih-item .info p{
+	font-size: 14px;
+	font-style: normal;
 }
+
 #pageContain {
 	overflow: hidden;
 }
@@ -79,8 +83,7 @@ body {
 #menu a { 
 	display: block; 
 	padding: 10px 0; 
-	background-color: 
-	rgba(255,255,255,0.7);
+	background-color: rgba(255,255,255,0.7);
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#b2ffffff,endColorstr=#b2ffffff); 
 	color: #0074EA; 
 	text-align: center; 
@@ -95,7 +98,7 @@ body {
 #menu .active a { 
 	color: #fff; 
 	background-color: rgba(0, 116, 234,0.5); 
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#700074EA,endColorstr=#700074EA); 
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7000000,endColorstr=#7000000); 
 	outline: none;
 }
 
@@ -169,11 +172,9 @@ body {
 }
 .page2 .intro {
 	padding: 50px 150px 0 100px; 
-	/*width: 900px;*/
-	/*max-width: 1000px;*/
 }
 .page2 .intro li{
-	display: inline-block; 
+	float: left;
 	width: 25%;
 	height: auto;
 	border-color: rgba(255,255,255,0.2);
@@ -197,18 +198,18 @@ body {
 	height: 200px;
 	overflow: hidden;
 	float: left;
-  box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+  	box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
 }
 .page3  .caption {
-	position: absolute;
-	text-align: center;
+  position: absolute;
+  text-align: center;
   width: 96%;
   padding: 2%;
   margin: 0;
   left: 0;
   bottom: 0;
   background: rgba(0,0,0,.5);
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7000000,endColorstr=#7000000);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#70000000,endColorstr=#70000000);
   color: #fff;
   font-size: 16px;
   font-weight: lighter;
