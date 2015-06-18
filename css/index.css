@@ -17,15 +17,6 @@ body {
 	font: 16px/1.5 "Microsoft YaHei",Helvetica,"STHeiti STXihei","Microsoft JhengHei",Arial;
 	min-width: 1000px;
 }
-.colored.effect6.square.ih-item .info{
-	background: #1a4a72;
-	background: rgba(26,74,114,0.6);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#1a4a72ff,endColorstr=#1a4a72ff); 
-}
-.colored.effect6.square.ih-item .info p{
-	font-size: 14px;
-	font-style: normal;
-}
 
 #pageContain {
 	overflow: hidden;
@@ -231,11 +222,11 @@ body {
 	padding-left: 100px;
 	padding-right: 150px;
 }
-.scenic-box li{
+.scenic-box li.ih-item.square{
 	*display: inline;
 	display: inline-block;
 	width: 31%;
-	/*width: 300px;*/
+	height: 440px;
 	margin: 10px;
 	position: relative;
 }
@@ -295,10 +286,10 @@ body {
 }
 /*/////////////////*/
 .page6{
-	background: #eee;
+	background: #efefef;
 }
 .page6 .contain { 
-	background: #eee;
+	background: #efefef;
 	text-align: left; 
 	color: #666;
 	height: 100%;
