@@ -33,6 +33,7 @@ body {
 }
 .page .header{
 	padding-left: 100px;
+	text-align: center;
 }
 .page .header h1{
 	text-align: center;
@@ -179,7 +180,7 @@ body {
 
 /*山庄设施*/
 .page3{
-	background: url(../img/facility/bg2.jpg) left top;
+	background: url(../img/facility/bg3.jpg) left top;
 	background-size: 100%;
 
 }
@@ -220,7 +221,7 @@ body {
 	/*color: #0074EA;*/
 	/*background: #f0f;*/
 	background: url(../img/scenic/bg2.jpg) no-repeat;
-	background-size: 100% 100%;
+	background-size: 100% auto;
 }
 .scenic-box{
 	min-width: 960px;
